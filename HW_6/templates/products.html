@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Товары</title>
+</head>
+<body>
+    {% if product %}
+    <h2>Выбранный товар</h2>
+        {{ product | safe }}
+    {% else %}
+        <h1>Список товаров</h1>
+            {{ products_table | safe }}
+    {% endif %}
+</body>
+</html>
