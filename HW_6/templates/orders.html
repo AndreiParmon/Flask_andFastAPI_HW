@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы</title>
+</head>
+<body>
+    {% if order %}
+    <h2>Выбранный заказ</h2>
+        {{ order | safe }}
+    {% else %}
+        <h1>Список заказов</h1>
+            {{ orders_table | safe }}
+    {% endif %}
+</body>
+</html>
